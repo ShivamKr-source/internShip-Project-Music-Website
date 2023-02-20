@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMENDATION SITE</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 20vh;
+        background-color: black;
+    }
+
+    .navbar ul li a {
+        margin: 5px 5px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        color: white;
+        margin: 20px 20px;
+        text-decoration: none;
+    }
+
+    .navbar nav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .navbar ul {
+        text-align: right;
+    }
+
+    .navbar span {
+        display: inline-block;
+        padding: 10px;
+        margin-left: 76px;
+        color: white;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    main div {
+        background: url('picsForIn/Wall.jpg');
+        height: 1536px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    main div p {
+        text-align: right;
+        font-size: 42px;
+
+    }
+
+    #p1 {
+        margin-right: 220px;
+        padding-top: 300px;
+        padding-left: 816px;
+        font-family: "Zeyada-Regular";
+    }
+
+    #p2 {
+        margin-right: 100px;
+        padding-left: 928px;
+    }
+
+    main ul {
+        padding-left: 900px;
+        padding-top: 30px;
+    }
+
+    main ul li {
+        padding-bottom: 7px;
+        font-size: 20px;
+    }
+
+    #button {
+        font-size: 25px;
+        margin-left: 996px;
+        background-color: rgb(221, 94, 211);
+        color: rgb(244, 241, 78);
+        padding: 4px 8px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span>
+                MUSIC
+                <!-- <span id="img1"><img src="picsForIn/iconWeb.avif" alt="Un-Supported"></span> -->
+            </span>
+            <nav style="margin-left: 959px;">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="/about.html" target="_main">ABOUT</a></li>
+                    <li><a href="/contact.html" target="_main">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <p style="text-align: right;" id="p1">Find Songs Of Your Choice.</p>
+            <p style="text-align: right;" id="p2">HAVE YOUR SELECTION.</p>
+            <p class="selection"></p>
+            <ul>
+                <li>
+                    <input type="checkbox"> Rock
+                </li>
+                <li>
+                    <input type="checkbox"> Hip-Hop
+                </li>
+                <li>
+                    <input type="checkbox"> Melody
+                </li>
+                <li>
+                    <input type="checkbox"> Metal
+                </li>
+                <li>
+                    <input type="checkbox"> Sufi
+                </li>
+            </ul>
+            </p>
+            <span>
+                <button id="button">SEARCH</button>
+            </span>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Copyright &copy;
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
