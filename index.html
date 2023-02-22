@@ -5,142 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECOMMENDATION SITE</title>
+    <title>MUSIOO</title>
+    <script src="https://kit.fontawesome.com/f4947af6db.js" crossorigin="anonymous"></script>
 </head>
+
 <style>
     * {
         margin: 0;
         padding: 0;
     }
 
-    .navbar {
-        height: 20vh;
+    header {
         background-color: black;
-    }
-
-    .navbar ul li a {
-        margin: 5px 5px;
         color: white;
-        text-decoration: none;
+        padding: 20px;
     }
 
-    .navbar ul li {
-        display: inline-block;
-        color: white;
-        margin: 20px 20px;
-        text-decoration: none;
-    }
-
-    .navbar nav {
-        display: inline-block;
-        text-align: right;
-    }
-
-    .navbar ul {
-        text-align: right;
-    }
-
-    .navbar span {
-        display: inline-block;
-        padding: 10px;
-        margin-left: 76px;
-        color: white;
-        margin-top: 20px;
-        font-size: 40px;
-    }
-
-    main div {
-        background: url('picsForIn/Wall.jpg');
-        height: 1536px;
+    main {
+        background: url('https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+        background-position: top center;
         background-size: contain;
-        background-repeat: no-repeat;
+        /* height: 2166; */
+        background-color: rgb(11, 25, 54);
+        padding-top: 315px;
+        padding-bottom: 315px;
+        padding-left: 320px;
+        padding-right: 266px;
+        color: white;
     }
 
-    main div p {
-        text-align: right;
-        font-size: 42px;
-
+    .quote {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    #p1 {
-        margin-right: 220px;
-        padding-top: 300px;
-        padding-left: 816px;
-        font-family: "Zeyada-Regular";
+    footer {
+        height:187px;
+        background-color: rgba(159, 93, 222, 0.741);
     }
 
-    #p2 {
-        margin-right: 100px;
-        padding-left: 928px;
+    .button{
+        background-color: black;
+        color:white;
+        border-radius: 20px;
+        border-color:rgb(255, 0, 183);
+        border-width: 7px;
+        font-size: 30px;
+        padding: 5px 10px;
     }
 
-    main ul {
-        padding-left: 900px;
-        padding-top: 30px;
-    }
-
-    main ul li {
-        padding-bottom: 7px;
-        font-size: 20px;
-    }
-
-    #button {
-        font-size: 25px;
-        margin-left: 996px;
-        background-color: rgb(221, 94, 211);
-        color: rgb(244, 241, 78);
-        padding: 4px 8px;
-    }
 </style>
 
 <body>
     <header>
-        <div class="navbar">
-            <span>
-                MUSIC
-                <!-- <span id="img1"><img src="picsForIn/iconWeb.avif" alt="Un-Supported"></span> -->
-            </span>
-            <nav style="margin-left: 959px;">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="/about.html" target="_main">ABOUT</a></li>
-                    <li><a href="/contact.html" target="_main">CONTACTS</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 style="text-align: center;">
+            <i class="fa-solid fa-headphones-simple"></i>
+            MUSIOO
+        </h1>
     </header>
     <main>
         <div>
-            <p style="text-align: right;" id="p1">Find Songs Of Your Choice.</p>
-            <p style="text-align: right;" id="p2">HAVE YOUR SELECTION.</p>
-            <p class="selection"></p>
-            <ul>
-                <li>
-                    <input type="checkbox"> Rock
-                </li>
-                <li>
-                    <input type="checkbox"> Hip-Hop
-                </li>
-                <li>
-                    <input type="checkbox"> Melody
-                </li>
-                <li>
-                    <input type="checkbox"> Metal
-                </li>
-                <li>
-                    <input type="checkbox"> Sufi
-                </li>
-            </ul>
-            </p>
-            <span>
-                <button id="button">SEARCH</button>
-            </span>
+            <h2 style="font-size: 50px;">
+                You Know What's Common Between Music & Mood , they have the same index , letter 'M'.
+            </h2>
+            <br>
+            <br>
+            <br>
+
+            <h3 class="quote" style="padding-top: 81px;">
+                Maybe you won't like my humour , but you'll like my song
+            </h3>
+            <h3 class="quote">
+                According to your mood , it's here you belong
+            </h3>
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <a href="/home.html" target="_main"><button style="font-size: 40px
+                ;border-color:rgb(3, 251, 255);background-color: black;color: white;border-width: 7px;border-radius: 20px;padding: 5px 10px;">Let's Get Going</button></a>
+            </div>
         </div>
     </main>
     <footer>
-        <div>
-            <p>
-                Copyright &copy;
+        <h3 style="padding-left: 620px;font-size: 40px;">For More Information...</h3>
+        <div style="padding-top: 70px;padding-left: 110px;">
+            <a href="/about.html" target="_main" style="display: inline;"> <button class="button">ABOUT <i class="fa-solid fa-address-card"></i></button></a>
+            <a href="/contact.html" target="_main" style="display: inline;padding-left: 980px;"><button class="button">CONTACT <i class="fa-solid fa-address-book"></i></button></a>
+        </div>
+        <div style="padding-top: 12PX;text-align: center;">
+            <p style="font-size: 30PX;">
+                COPYRIGHT &copy; RESERVED
             </p>
         </div>
     </footer>
