@@ -5,28 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <style> 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+    .contact{
+        position: relative;
+        min-height: 100vh;          
+
+        
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        background-size:cover;
+
+
+        
+    }
+    .content .contact{
+        max-width: 800px;
+        text-align: center;
+    }
+    .contact .content h2{
+        font-size: 36px;
+        font-weight: 500;
+        color: #4d0420;
+        text-align: center;
+    }
+    .contact .content p{
+
+    font-weight: 300;
+    color: black;
+    font-size: 28px;
+    }
+    .container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .container .contactinfo
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactinfo .box
+    {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+
+    }
+    .container .contactinfo .box .icon
+    {
+        min-width: 60px;
+        height: 60px;
+        background: rgb(132, 37, 87);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+        font-size: 300;
+      
+
+    }
+ 
+    .container .contactinfo .box .text
+    {
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: black;
+        flex-direction: column;
+        font-size: 300;
+        animation-name: contact;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0.8s;
+
+    }
+    @keyframes contact {
+            
+        
+        0%{
+              top: 0px; background:grey; width: 100px;}
+            100% {top: 200px; background:#b13564; width: 300px;
+            }
+    }
+    .container .contactinfo .box .text h3{
+        font-weight: 500;
+        color: #692e45;
+        font-size: 32;
+    }
+</style> 
 </head>
 <body>
-    <header>
-        <h1>CONTACT US</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Ways to conatct us :-</h2>
-        </section>
-        <article>
-            <ul>
-                <li>
-                    +91-number
-                </li>
-                <li>
-                    email@gmail.com
-                </li>
-                <li>
-                    address
-                </li>
-            </ul>
-        </article>
-    </main>
+    
+        
+            <section class="contact">
+                <div class="content">
+                    <h2>CONTACT US</h2>
+                    
+                </div>
+            
+                
+                <div class="container">
+                    <div class="contactinfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+                                <div class="text">
+                                    <h3>Address</h3>
+                                       <p>Nitte, SH1, Karkala, 
+                                        Karnataka 574110</p>
+                                </div>
+                        </div>
+                    
+            
+
+                
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <div class="text">
+                                    <h3>Phone</h3>
+                                <ul>
+                                    <li>+91 9006783009</li>
+                                    <li>+91 8296780130</li>
+                                </ul>
+                            </div>
+                        </div>
+                   
+            
+
+
+                
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>nitte09@gmail.com</p>
+                                </div>
+                                
+                            
+                        </div>
+                
+                    </div>
+</div>
+            </section>
+            
+        </main>
+    
 </body>
 </html>
