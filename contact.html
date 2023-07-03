@@ -7,7 +7,8 @@
     <title>CONTACT</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-   <style> 
+</head>
+<style>
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@
         position: relative;
         min-height: 100vh;          
 
-        
+        left: -200px;
         padding: 50px 100px;
         display: flex;
         justify-content: center;
@@ -35,10 +36,13 @@
         text-align: center;
     }
     .contact .content h2{
-        font-size: 36px;
+        position: absolute;
+        top: 110px;
+        left: 43s0px;
+        font-size: 45px;
         font-weight: 500;
         color: #4d0420;
-        text-align: center;
+        text-align: center; 
     }
     .contact .content p{
 
@@ -109,9 +113,57 @@
         color: #692e45;
         font-size: 32;
     }
-</style> 
-</head>
-<body>
+    .form-container{
+        height: 600px;
+        width: 600px;
+        margin: 50px auto;
+
+    }
+    .form-container form
+    {
+        position: absolute;
+        top: 150px;
+        right: 150px;
+        height: 600px;
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-image: conic-gradient(from -45deg, pink,rgb(132, 37, 87));
+        padding: 30px;
+        text-transform: capitalize;
+        border-radius: 30px;
+        color: black;
+    }
+    .form-container form h3{
+        text-align: center;
+        font-size: 3.0rems;
+        color: black;
+    }
+    .form-container form label{
+        font-size: 1.3rems;
+        padding: 3px 0;
+        margin: 5px 0 5px 0;
+    }
+    .form-container form input, textarea{
+        padding: 8px;
+        border-radius: 20px;
+        margin: 5px 0 5px 0;
+
+        border: none;
+        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    .form-container form input[type="button"]{
+        align-self: flex-end;
+        height: 30px;
+        width: 60px;
+        font-size: 100%;
+
+    }
+    </style>
+    <body>
     
         
             <section class="contact">
@@ -166,6 +218,20 @@
             </section>
             
         </main>
+    <div class="form-container">
+        <form action="">
+            <h3>Give Your Valueable Feedback</h3>
+            <label for="">Name</label>
+            <input type="text" placeholder="name" required>
+            <label for="">Email</label>
+            <input type="email" placeholder="e-mail" required>
+            <label for="">Phone Number</label>
+            <input type="#" placeholder="phone number" required>
+            <textarea name="" id="" cols="20" rows="8" placeholder="Your message"></textarea>
+            <input type="button" value="submit">
+        </form>
+    </div>
     
 </body>
 </html>
+    
