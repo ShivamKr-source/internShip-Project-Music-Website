@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy recommendations</title>
+</head>
+
+<body>
+    <p>To Support Your Mood , Here are some happy songs to your go</p>
+    <ul id="data"></ul>
+
+
+
+    <script>
+
+        let data = { 'hello': 12 };
+
+        const musicData = async () => {
+            const url = 'https://spotify23.p.rapidapi.com/search/?q=happy&type=albums&offset=0&limit=10&numberOfTopResults=5';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '5d2921f9dbmsh41ee344c859a15ep1c22a9jsn76e4871ce456',
+                    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+                }
+            };
+
+            const response = await fetch(url, options);
+            const result = await response.json();
+            return result
+        }
+
+        (
+            async () => {
+                try {
+                    const res = await musicData()
+                    data = res
+                    console.log(res);
+                    let dataDiv = document.getElementById('data')
+                    dataDiv.innerHTML = JSON.stringify(data)
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+        )()
+
+
+
+    </script>
+</body>
+
+</html>

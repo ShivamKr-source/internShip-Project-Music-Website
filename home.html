@@ -50,7 +50,7 @@
     }
 
     main div {
-        background: url('picsForIn/Wall.jpg');
+        background: url('Wall.jpg');
         height: 1536px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -84,7 +84,7 @@
         font-size: 20px;
     }
 
-    #button {
+    .button {
         font-size: 25px;
         margin-left: 996px;
         background-color: rgb(221, 94, 211);
@@ -113,31 +113,38 @@
             <p class="selection"></p>
             <ul>
                 <li>
-                    <input type="checkbox"> SAD
+                    <a href="/sad.html">
+                    <button id="sad" style="font-size:20px;border-radius: 20px;border-width:7px; border-color: rgb(110, 175, 231) ;">SAD</button>
+                    </a> 
                 </li>
                 <li>
-                    <input type="checkbox"> HAPPY
+                    <a href="/happy.html">
+                    <button id="happy" style="font-size:20px;border-radius: 20px;border-width:7px; border-color: rgb(110, 175, 231) ;">HAPPY</button>
+                    </a> 
                 </li>
                 <li>
-                    <input type="checkbox"> EMOTIONAL
+                    <a href="/fun.html">
+                    <button id="fun" style="font-size:20px;border-radius: 20px;border-width:7px; border-color: rgb(110, 175, 231) ;">FUN</button>
+                    </a> 
                 </li>
                 <li>
-                    <input type="checkbox"> FUN
+                    <a href="/party.html">
+                    <button id="party" style="font-size:20px;border-radius: 20px;border-width:7px; border-color: rgb(110, 175, 231) ;">PARTY</button>
+                    </a> 
                 </li>
             </ul>
-            </p>
-            <span>
-                <button id="button" style="border-radius: 20px;border-width:7px; border-color: rgb(110, 175, 231) ;">SEARCH</button>
-            </span>
         </div>
     </main>
     <footer>
-        <div>
+        <div style="text-align: center ;">
             <p>
                 Copyright &copy;
             </p>
         </div>
     </footer>
+
+    <script src="/back.js">
+    </script>
 </body>
 
 </html>

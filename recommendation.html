@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMENDATIONS</title>
+</head>
+<script>
+    let x = Document.getElementById('sad');
+    
+    Document.getElementById('recc').onclick().innerHTML="Sad songs are";
+</script>
+<body>
+    <div>
+        <h1 style="text-align: center;">
+            YOUR RECOMMENDATIONS ARE READY.<br>
+            <h2 id='recc' style="text-align: center;">
+                Click on the button below to see the results...
+            </h2>
+        </h1>
+        <button id="sad">SAD</button>
+        <!-- <span style="text-align: center;">
+            <button STYLE="margin-left: 659px;" onclick="func()">SHOW</button>
+        </span> -->
+    </div>
+    <!-- <script>
+        const http = require("https");
+         
+        const func = (http) => {
+
+            const options = {
+                "method": "GET",
+                "hostname": "deezerdevs-deezer.p.rapidapi.com",
+                "port": null,
+                "path": "/search?q=eminem",
+                "headers": {
+                    "X-RapidAPI-Key": "624a8a7e7dmshba6e114f2caa17fp143498jsn30ad81856f4a",
+                    "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+                    "useQueryString": true
+                }
+            };
+            const req = http.request(options, function (res) {
+                const chunks = [];
+                res.on("data", function (chunk) {
+                    chunks.push(chunk);
+                });
+                res.on("end", function () {
+                    const body = Buffer.concat(chunks);
+                    console.log(body.toString());
+                });
+            });
+            req.end();
+        }
+    </script> -->
+    
+
+</body>
+
+</html>
